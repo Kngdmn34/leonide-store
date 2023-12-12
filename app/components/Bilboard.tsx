@@ -10,6 +10,8 @@ interface BillboardPage {
     data: BillboardType[]
 }
 
+export const revalidate = 10
+
 const BilboardSec: React.FC<BillboardPage> = ({ data }) => {
 
 
