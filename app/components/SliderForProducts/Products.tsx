@@ -1,6 +1,5 @@
 
-import React, { useEffect, useState } from 'react'
-import axios, { AxiosResponse } from 'axios'
+import React from 'react'
 
 
 import SliderProducts from './components/SliderProducts';
@@ -20,7 +19,7 @@ const ProductsSlider = async () => {
 
             <br />
             <div className='w-[96%] mx-auto '>
-                <SliderProducts title='On Sale' products={billboard} />
+                <SliderProducts products={billboard} />
             </div>
 
         </div>
