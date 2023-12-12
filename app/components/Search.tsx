@@ -52,7 +52,7 @@ const Search = () => {
             <div className='w-full  flex justify-center items-center flex-col space-y-3'>
                 <span className='relative'>
                     <input
-                        className={`text-sm relative ${open ? `flex z-20 translate-x-0  ease-in-out delay-300 duration-400` : ` opacity-0 translate-x-5`} px-1 -right-36 top-1  bg-white/20 backdrop-blur-3xl border-2 border-yellow-700/60 `}
+                        className={`text-sm relative ${open ? `flex z-20 translate-x-0  ease-in-out delay-300 duration-400` : ` opacity-0 -z-10 translate-x-5`} px-1 -right-36 top-1  bg-white/20 backdrop-blur-3xl border-2 border-yellow-700/60 `}
                         placeholder='Search ...'
                         value={query}
                         onChange={handleChange}
