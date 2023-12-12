@@ -93,7 +93,7 @@ const BilboardSec: React.FC<BillboardPage> = ({ data }) => {
                             style={{
 
                                 backgroundImage: `url(${data[currentImage]?.coverId})`,
-                                backgroundPosition: 'cover',
+                                backgroundPosition: 'center',
                                 objectFit: 'contain',
                                 backgroundSize: 'cover'
                             }}
