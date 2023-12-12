@@ -13,8 +13,8 @@ const Categories = () => {
 
 
     return (
-        <div className='w-[96%] mx-auto mb-16'>
-            <div className='grid w-[52%] mx-auto place-content-center gap-2  grid-cols-2 mt-20   '>
+        <div className='w-[96%] flex justify-center items-center mx-auto mb-16'>
+            <div className='grid  mx-auto place-content-center gap-1  grid-cols-2 mt-20   '>
                 <Link href={
                     {
                         pathname: '/browse',
