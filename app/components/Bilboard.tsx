@@ -50,14 +50,14 @@ const BilboardSec: React.FC<BillboardPage> = ({ data }) => {
 
 
     return (
-        <div className='relative w-[80%] min-h-screen  mb-11 mt-20 mx-auto  shadow-2xl border-4 border-yellow-700/60  overflow-hidden'>
+        <div className='relative w-[96%] h-[96%] mx-auto mt-20 border-4 border-yellow-700/60   mb-11 overflow-hidden'>
             {data.length !== 0 ?
                 <div ref={ref} style={{ overflow: 'hidden' }}>
                     <AnimatePresence mode='wait' key={currentImage}>
-                        <motion.div className='absolute  bg-gradient-to-r  min-h-screen  from-yellow-800   left-0 w-full z-10'>
+                        <motion.div className='absolute  bg-gradient-to-r  min-h-screen  from-yellow-800/60   left-0 w-full z-10'>
 
                             <motion.h1
-                                className='text-4xl mt-52 tracking-wider font-bold mx-24  drop-shadow-md text-neutral-300'
+                                className='text-4xl mt-32 tracking-wider font-bold mx-24  drop-shadow-md text-neutral-300'
                                 key={currentImage}
                                 initial={{ opacity: 1, x: -20 }}
                                 animate={{ opacity: 1, x: 0 }}
@@ -88,7 +88,7 @@ const BilboardSec: React.FC<BillboardPage> = ({ data }) => {
 
                         </motion.div>
                         <motion.div
-                            className='relative  w-full min-h-screen overflow-hidden  opacity-95   z-0 '
+                            className='relative  w-full h-96  overflow-hidden opacity-95 inset-0  z-0 '
                             initial={{ opacity: 0, x: -20 }}
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.5 }}
@@ -100,7 +100,7 @@ const BilboardSec: React.FC<BillboardPage> = ({ data }) => {
                                 backgroundSize: 'cover'
                             }}
                         >
-                            <Image className='   absolute drop-shadow-md right-5 top-14  ' width={150} src={Logo} quality={100} alt='logo' />
+                            <Image className='   absolute drop-shadow-md right-3 top-5  ' width={100} src={Logo} quality={100} alt='logo' />
                         </motion.div>
 
                     </AnimatePresence>
