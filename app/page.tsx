@@ -9,7 +9,9 @@ import Navbar from "./components/Navbar"
 import Search from "./components/Search"
 import Services from "./components/Services"
 
-export default async function Home() {
+export const revalidate = 10
+
+const Home = async () => {
 
   const billboardImage = await getBillboard()
 
@@ -48,3 +50,5 @@ export default async function Home() {
     </>
   )
 }
+export default Home
+
