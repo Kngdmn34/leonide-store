@@ -57,7 +57,7 @@ const ProductPage = async ({ params }: { params: { id: string } }) => {
 
                     </span>
                     <span className='flex flex-col space-y-3 justify-start items-start'>
-                        <label className='text-3xl mb-6 shadow-lg p-2 border-4  border-yellow-700/60 tracking-wider  '>{data.name.toUpperCase()}</label>
+                        <label className='text-3xl mb-6 shadow-lg p-2 border-b-2  border-yellow-700/60 tracking-wider  '>{data.name.toUpperCase()}</label>
                         <p className={`${pinyon.className}  flex flex-row space-x-5 drop-shadow-sm text-3xl p-1 font-bold  tracking-wide `}><p className='first-letter:uppercase'>for</p> <p className='first-letter:uppercase'>{data.category}</p></p>
                         <p className=' indent-4  first-letter:uppercase cursor-default' >{data.description}</p>
 
