@@ -3,7 +3,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { motion, AnimatePresence, useSpring } from 'framer-motion'
 import { Billboard as BillboardType } from '@/types';
-import Logo from '@/public/images/pngwing.comli.png'
+import Logo from '@/public/images/pngwinggold.com.png'
 import Image from 'next/image';
 
 interface BillboardPage {
