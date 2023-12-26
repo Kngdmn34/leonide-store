@@ -23,7 +23,7 @@ const Navbar = () => {
     }
 
     return (
-        <nav className={` fixed bg-white/20  backdrop-blur-md z-20  w-full top-0  shadow-xl  border-b-4  border-yellow-600/60 py-1`}>
+        <nav className={` fixed   backdrop-blur-md z-20  w-full top-0  shadow-xl  border-b-4  border-yellow-600/60 py-1`}>
             <div className='w-full relative '>
                 <span className=' w-full justify-center flex-col space-y-1 items-center'>
                     <div onClick={() => router.push(`/`)} className={`${pinyon.className} cursor-default flex relative  text-3xl text-yellow-700/80 tracking-wide font-bold drop-shadow-md z-20 justify-center`}>Leonide</div>

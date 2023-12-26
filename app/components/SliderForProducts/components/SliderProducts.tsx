@@ -46,8 +46,8 @@ const SliderProducts: React.FC<ProductListProps> = ({ products }) => {
                         >
                             <span className='w-full  text-neutral-300 absolute bottom-0 font-mono bg-gradient-to-t from-20% from-neutral-800/90  px-2 flex-row flex justify-between'>
 
-                                <h1 >{item.name.toLocaleUpperCase().slice(0, 25)}</h1>
-                                <p>{item.price.toFixed(2)}$</p>
+                                <h1 >{item.name.toLocaleUpperCase().slice(0, 20)}</h1>
+                                <p>{item.price.toFixed(2)} MAD</p>
 
                             </span>
 

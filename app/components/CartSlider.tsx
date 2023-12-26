@@ -25,7 +25,7 @@ const CartSlider: React.FC<CartSliderProps> = ({ Slider, SliderToggle }) => {
 
 
     return (
-        <main className='absolute right-0 top-0 bg-white  shadow-xl z-30 flex justify-end'>
+        <main className='absolute right-0 top-0 bg-neutral-700 shadow-xl z-30 flex justify-end'>
             <aside className={`${Slider ? `w-72 justify-end border-l-2 border-yellow-700/60 min-h-screen` : `hidden`} `} >
                 <div className='w-full flex flex-col space-y-3 '>
                     <button onClick={SliderToggle} className='p-2 drop-shadow-md text-yellow-700/60  flex justify-start'>
