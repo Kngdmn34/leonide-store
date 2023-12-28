@@ -28,34 +28,64 @@ const SliderProducts: React.FC<ProductListProps> = ({ products }) => {
 
     return (
         <div className='mt-20'>
+            <div className='hidden lg:flex'>
+                <motion.div ref={carousel} className='carousel'>
+                    <motion.div drag="x" dragConstraints={{ right: 0, left: -width }} className='inner-carousel space-x-3'>
 
-            <motion.div ref={carousel} className='carousel'>
-                <motion.div drag="x" dragConstraints={{ right: 0, left: -width }} className='inner-carousel space-x-3'>
-                    {products.filter((feautred) => feautred.isFeatured).map((item) => (
+                        {products.filter((feautred) => feautred.isFeatured).map((item) => (
 
-                        <motion.div
-                            onDoubleClick={() => router.push(`/products/${item.id}`)}
-                            key={item.id}
-                            className='item   relative'
-                            style={{
-                                backgroundImage: `url(${item.imageId})`,
-                                backgroundPosition: 'center',
-                                backgroundSize: 'cover'
-                            }}
+                            <motion.div
+                                onDoubleClick={() => router.push(`/products/${item.id}`)}
+                                key={item.id}
+                                className='item   relative'
+                                style={{
+                                    backgroundImage: `url(${item.imageId})`,
+                                    backgroundPosition: 'center',
+                                    backgroundSize: 'cover'
+                                }}
 
-                        >
-                            <span className='w-full  text-neutral-300 absolute bottom-0 font-mono bg-gradient-to-t from-20% from-neutral-800/90  px-2 flex-row flex justify-between'>
+                            >
+                                <span className='w-full  text-neutral-300 absolute bottom-0 font-mono bg-gradient-to-t from-20% from-neutral-800/90  px-2 flex-row flex justify-between'>
 
-                                <h1 >{item.name.toLocaleUpperCase().slice(0, 20)}</h1>
-                                <p>{item.price.toFixed(2)} MAD</p>
+                                    <h1 >{item.name.toLocaleUpperCase().slice(0, 20)}</h1>
+                                    <p>{item.price.toFixed(2)} MAD</p>
 
-                            </span>
+                                </span>
 
-                        </motion.div>
+                            </motion.div>
 
-                    ))}
+                        ))}
+
+                    </motion.div>
                 </motion.div>
-            </motion.div>
+            </div>
+            <div className="flex lg:hidden">
+                <motion.div ref={carousel} className='carousel'>
+                    <motion.div drag="x" dragConstraints={{ right: 0, left: -width }} className='inner-carousel space-x-3'>
+
+                        {products.filter((feautred) => feautred.isFeatured).map((item) => (
+
+                            <motion.div
+                                onClick={() => router.push(`/products/${item.id}`)}
+
+                                key={item.id}
+                                className='itemMobile   relative'
+                                style={{
+                                    backgroundImage: `url(${item.imageId})`,
+                                    backgroundPosition: 'center',
+                                    backgroundSize: 'cover'
+                                }}
+
+                            >
+
+
+                            </motion.div>
+
+                        ))}
+
+                    </motion.div>
+                </motion.div>
+            </div>
         </div>
     )
 }

@@ -9,7 +9,7 @@ const Services = () => {
     return (
         <div className='w-[72%] mx-auto mb-11 shadow-lg'>
             <div className='flex p-2 justify-center items-center border-2 border-yellow-700/60'>
-                <span className='flex  text-neutral-400 drop-shadow-md flex-row space-x-20'>
+                <span className='flex  text-neutral-400 space-x-0 space-y-7 md:space-y-0 flex-col drop-shadow-md md:flex-row md:space-x-20'>
                     <span className='flex flex-col space-y-2 items-center'>
                         <RiCustomerService2Line size='30' />
                         <label className='text-sm'>Customer Support 7j/24h</label>

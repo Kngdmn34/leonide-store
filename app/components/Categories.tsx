@@ -13,8 +13,8 @@ const Categories = () => {
 
 
     return (
-        <div className='w-[96%] flex justify-center items-center mx-auto mb-16'>
-            <div className='grid  mx-auto place-content-center gap-1  grid-cols-2 mt-20   '>
+        <div className='w-52 lg:w-[96%] flex justify-center items-center mx-auto mb-16'>
+            <div className='grid  mx-auto place-content-center gap-1  grid-cols-1 md:grid-cols-2 mt-20   '>
                 <Link href={
                     {
                         pathname: '/browse',
@@ -24,7 +24,7 @@ const Categories = () => {
                     }
                 }>
                     <div
-                        className='relative  hover:opacity-90  border-4 border-yellow-600/60 p-2  grid items-center  place-content-center justify-center w-72 h-72'
+                        className='relative  hover:opacity-90  border-4 border-yellow-600/60 p-2  grid items-center  place-content-center justify-center w-44 h-44 md:w-72 md:h-72'
                         style={{
                             backgroundImage: `url('/images/formen.jpg')`,
                             backgroundPosition: 'center',
@@ -43,7 +43,7 @@ const Categories = () => {
                         category: "women"
                     }
                 }}>
-                    <div className='relative  hover:opacity-90  border-4 border-yellow-600/60 p-2  grid items-center  place-content-center justify-center w-72 h-72'
+                    <div className='relative  hover:opacity-90  border-4 border-yellow-600/60 p-2  grid items-center  place-content-center justify-center w-44 h-44 md:w-72 md:h-72'
                         style={{
                             backgroundImage: `url('/images/forwomen.jpg')`,
                             backgroundPosition: 'center',
